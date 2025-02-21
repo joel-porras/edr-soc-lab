@@ -12,3 +12,7 @@ For this lab project, we are simulating a real cyber attack and utlizing endpoin
     - Windows 10 VM (Victim)
 - LimaCharlie (SecOps Cloud EDR)
 - Sliver-Server (C2 Attack Payload Tool)
+
+#
+
+## Virtual Machine Setup
