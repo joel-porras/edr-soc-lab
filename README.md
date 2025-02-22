@@ -104,4 +104,4 @@ We can view the event activity procces that is executed by this command. For thi
 $~$
 
 ### Credit
-[Eric Capuano](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?sd=pf)
+Lab project guide by [Eric Capuano](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?sd=pf)
