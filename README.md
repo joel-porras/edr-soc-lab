@@ -1,7 +1,7 @@
 # edr-soc-lab
 
 ## Project: 
-For this lab project, we are simulating a real cyber attack and utlizing endpoint detection and reponse. The attack is delpoyed by an Ubuntu virtual machine (attacker) which will target a Windows endpoint virtual machine (victim). On the Ubuntu VM, we are using Sliver-Server, a command and control (C2) framework designed for adversary and red team testing. On the Windows VM, we are running LimaCharlie, an EDR tool, to capture and take action against malicious activity.
+For this lab project, we are simulating a real cyber attack and utlizing endpoint detection and response. The attack is delpoyed by an Ubuntu virtual machine (attacker) which will target a Windows endpoint virtual machine (victim). On the Ubuntu VM, we are using Sliver-Server, a command and control (C2) framework designed for adversary and red team testing. On the Windows VM, we are running LimaCharlie, an EDR tool, to capture and take action against malicious activity.
 
 
 
@@ -9,14 +9,14 @@ For this lab project, we are simulating a real cyber attack and utlizing endpoin
 
 - VMware Workstation Pro (Hypervisor)
     - Ubuntu VM (Adversary)
-    - Windows 10 VM (Victim)
+    - Windows 11 VM (Victim)
 - LimaCharlie (SecOps Cloud EDR)
 - Sliver-Server (C2 Attack Payload Tool)
 
 $~$
 
 ## Virtual Machine Setup
-We first start off with creating a small virtualization environment for this lab which included setting up an Ubuntu VM and a Windows 10 VM. For the purposes of this lab, Windows Defender was permanently disabled to fully experience a targeted attack without interference.
+We first start off with creating a small virtualization environment for this lab which included setting up an Ubuntu VM and a Windows 11 VM. For the purposes of this lab, Windows Defender was permanently disabled to fully experience a targeted attack without interference.
 
 |![Capture1](https://github.com/user-attachments/assets/381054a4-fafa-4e15-8122-4444a32a2eef)|![Capture2](https://github.com/user-attachments/assets/1eb1318f-901d-44b1-8b69-1ac703205aae)|
 |:-:|:-:|
@@ -26,9 +26,9 @@ $~$
 ## LimaCharlie
 To set up Lima Charlie as an EDR tool, I first created an organization called ‘Blue Wave Defense’ and selected a preloaded template called “Extended Detection and Response Standard.”
 
-A sensor was then installed on the Windows 10 VM endpoint which serves as the primary data input into LimaCharlie. Once the sensor installation was confirmed successful, the LimaCharlie web UI notifies us if the sensor is detected and reporting in.
+A sensor was then installed on the Windows 11 VM endpoint which serves as the primary data input into LimaCharlie. Once the sensor installation was confirmed successful, the LimaCharlie web UI notifies us if the sensor is detected and reporting in.
 
-After the sensor installation, an “Artifact Collection” rule was created to direct Windows 10 sysmon event logs to LimaCharlie, generating EDR telemetry.
+After the sensor installation, an “Artifact Collection” rule was created to direct Windows sysmon event logs to LimaCharlie, generating EDR telemetry.
 
 |![Capture3](https://github.com/user-attachments/assets/f6f9f756-ff02-4c54-a2af-f25a02f61e59)|![Capture4](https://github.com/user-attachments/assets/8d9812e2-2be8-494f-aaa5-052d6f5ae440)|
 |:-:|:-:|
